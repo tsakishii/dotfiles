@@ -1,0 +1,14 @@
+# -*- mode: gitignore; -*-
+
+*.eld
+auto-saves-list/
+custom/
+.cache/
+var/
+tansient/
+bookmarks
+elpa/
+eln-cache/
+eshell/history
+eshell/lastdir
+workspaces/
