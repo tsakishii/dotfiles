@@ -1,0 +1,14 @@
+# -*- mode: gitignore; -*-
+
+# Emacs
+.emacs.d/*.eld
+.emacs.d/auto-saves-list/
+.emacs.d/.cache/
+.emacs.d/custom/
+.emacs.d/var/
+.emacs.d/bookmarks
+.emacs.d/elpa/
+.emacs.d/eln-cache/
+.emacs.d/eshell/history
+.emacs.d/eshell/lastdir
+.emacs.d/eshell/workspace/
