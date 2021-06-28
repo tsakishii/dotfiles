@@ -10,17 +10,19 @@ LIST_OF_APPS=""
 apt-get update
 echo "Installing some applications I like"
 while read -r p; do sudo apt-get install -y $p ; done < <(cat << EOF
-      openjdk-11-jdk
-      ruby-full
-      python-is-python3
+      atom
+      curl
+      emacs
+      ghc
+      git-all
       neofetch
       npm
-      curl
+      nodejs
+      openjdk-11-jdk
+      python-is-python3
+      ruby-full
+      sqlite3
       wget
-      git-all
-      emacs
-      atom
-      ghc
 EOF
 )
 echo press Ctrl+c to quit
