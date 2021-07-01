@@ -22,6 +22,8 @@ while read -r p; do sudo apt-get install -y $p ; done < <(cat << EOF
       python-is-python3
       ruby-full
       sqlite3
+      texlive
+      texlive-latex-extra
       wget
 EOF
 )
