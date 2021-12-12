@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# contributor: KiwiBoaye
-# name: fori
-# key: fori
-# --
-for (${1:int ${4:i} = 0}; ${2:${5:i} < n}; ${3: ${6:i}++}) {
-    $7
-}
