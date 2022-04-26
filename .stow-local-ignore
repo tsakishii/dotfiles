@@ -1,0 +1,6 @@
+# GNU Stow local ignore file
+
+\.git
+^/README.*
+^/LICENSE.*
+LICENSE

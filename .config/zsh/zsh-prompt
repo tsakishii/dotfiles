@@ -1,0 +1,1 @@
+PS1="%B%{$fg[green]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[white]%}%~%{$fg[green]%}]%{$fg[white]%}%b λ%b "
