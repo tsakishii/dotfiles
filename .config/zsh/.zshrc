@@ -1,5 +1,3 @@
-#!/bin/sh
-
 # Aliases
 ## emacs
 alias emdae='emacs --daemon'
