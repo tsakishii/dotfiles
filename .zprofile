@@ -8,6 +8,9 @@ GUIX_PROFILE="$HOME/.guix-profile"
 GUIX_PROFILE="$HOME/.config/guix/current"
 . "$GUIX_PROFILE/etc/profile"
 
+# rust setup
+. "$HOME/.cargo/env"
+
 # programs
 export BROWSER="firefox"
 export TERMINAL="gnome-terminal"
