@@ -8,8 +8,9 @@ GUIX_PROFILE="$HOME/.guix-profile"
 GUIX_PROFILE="$HOME/.config/guix/current"
 . "$GUIX_PROFILE/etc/profile"
 
-# rust setup
+# rust setup & add to PATH
 . "$HOME/.cargo/env"
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # programs
 export BROWSER="firefox"
