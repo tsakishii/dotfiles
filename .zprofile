@@ -14,7 +14,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # programs
 export BROWSER="firefox"
-export TERMINAL="gnome-terminal"
+export TERMINAL="alacritty"
 
 # add to path
 # set PATH so it includes private bin if it exists
