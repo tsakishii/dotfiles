@@ -15,6 +15,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # programs
 export BROWSER="firefox"
 export TERMINAL="alacritty"
+export EDITOR='emacs'
 
 # add to path
 # set PATH so it includes private bin if it exists
