@@ -1,0 +1,50 @@
+window:
+  dimensions:
+    columns: 124
+    lines: 28
+
+  padding:
+    x: 5
+    y: 5
+    class:
+      instance: Alacritty
+      general: Alacritty
+
+scrolling:
+  history: 10000
+  multiplier: 3
+  auto_scroll: false
+
+window_opacity: 1.5
+
+font:
+  normal:
+    family: Hack
+    style: Regular
+  # Bold
+  bold:
+    family: Hack
+    style: Bold
+  # Italic
+  italic:
+    family: Hack
+    style: "Bold Italic"
+size: 11.0
+
+use_thin_strokes: false
+
+selection:
+  save_to_clipboard: true
+
+cursor:
+  # Block
+  style: Block
+
+mouse:
+  hide_when_typing: true
+
+key_bindings:
+  - { key: PageUp,   mods: Shift|Control,   action: ScrollPageUp   }
+  - { key: PageDown, mods: Shift|Control,   action: ScrollPageDown }
+  - { key: End,      mods: Shift|Control,   action: ScrollToBottom }
+  - { key: Home,     mods: Shift|Control,   action: ScrollToTop    }
