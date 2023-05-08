@@ -12,6 +12,11 @@ GUIX_PROFILE="$HOME/.config/guix/current"
 . "$HOME/.cargo/env"
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# python environments 'pyenv'
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 # programs
 export BROWSER="firefox"
 export TERMINAL="alacritty"
@@ -38,6 +43,10 @@ export PATH=$JAVA_HOME/bin:$PATH
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# deno
+export DENO_INSTALL="$HOME/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
 
 # Added by Toolbox App
 export PATH="$HOME/.local/share/JetBrains/Toolbox/scripts:$PATH"
