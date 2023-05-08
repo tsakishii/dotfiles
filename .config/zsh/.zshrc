@@ -15,6 +15,11 @@ alias zsrc='source $ZDOTDIR/.zshrc'
 alias ll='ls -l --color=auto'
 alias la='ls -la --color=auto'
 
+## Kubernetes & Minikube
+alias mk="minikube kubectl --"
+alias k="kubectl"
+source <(kubectl completion zsh)
+
 ## the-fuck
 eval $(thefuck --alias)
 
