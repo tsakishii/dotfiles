@@ -1,32 +1,3 @@
-# Aliases
-## emacs
-alias emdae='emacs --daemon'
-alias emkill='emacsclient -e "(kill-emacs)"'
-alias emstart='emacsclient -c -a emacs'
-
-## grep
-#alias ag='grep --color-match="1;31"'
-#alias grep='ag --color-match="1;31"'
-
-## zshell
-alias zsrc='source $ZDOTDIR/.zshrc'
-
-## ls
-alias ll='ls -l --color=auto'
-alias la='ls -la --color=auto'
-
-## Kubernetes & Minikube
-alias mk="minikube kubectl --"
-alias k="kubectl"
-source <(kubectl completion zsh)
-
-## the-fuck
-eval $(thefuck --alias)
-
-## youtube-dl
-alias yt='youtube-dl --add-metadata -i'
-alias yta='youtube-dl -x -f bestaudio/best'
-
 # Almighty GNU Emacs binding
 bindkey -e
 
@@ -47,6 +18,9 @@ _comp_options+=(globdots) # Shows hidden files
 HISTSIZE=1000000
 SAVEHIST=1000000
 HISTFILE=$HOME/.cache/zsh/history
+
+# Source aliases
+source $ZDOTDIR/aliases
 
 # Source functions
 source ~/.config/zsh/zsh-functions
