@@ -9,7 +9,7 @@ alias emstart='emacsclient -c -a emacs'
 #alias grep='ag --color-match="1;31"'
 
 ## zshell
-alias zsrc='source $ZDOTDIR/.zshrc'
+alias zsrc='source $ZDOTDIR/zshrc'
 
 ## ls
 alias ll='ls -l --color=auto'
