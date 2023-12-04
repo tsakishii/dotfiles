@@ -17,3 +17,8 @@ Clone this repository in your `$HOME` or `~/` directory.
 After that you can run this command from inside the `~/dotfiles` directory:
 
     stow .
+
+If, by any chance, you mess something up, just go back to the `~/dotfiles` directory
+and run this command:
+
+    stow -D .
