@@ -1,21 +1,13 @@
 #!/bin/zsh
 
-# guix setup
-GUIX_PROFILE="$HOME/.guix-profile"
-. "$GUIX_PROFILE/etc/profile"
+# # rust setup & add to PATH
+# . "$HOME/.cargo/env"
+# export PATH="$HOME/.cargo/bin:$PATH"
 
-
-GUIX_PROFILE="$HOME/.config/guix/current"
-. "$GUIX_PROFILE/etc/profile"
-
-# rust setup & add to PATH
-. "$HOME/.cargo/env"
-export PATH="$HOME/.cargo/bin:$PATH"
-
-# python environments 'pyenv'
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+# # python environments 'pyenv'
+# export PYENV_ROOT="$HOME/.pyenv"
+# command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
 
 # programs
 export BROWSER="firefox"
@@ -39,14 +31,14 @@ export PATH=$GRADLE_HOME/bin:$PATH
 export JAVA_HOME=/usr/lib/jvm/java-1.17.0-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 
-# deno install
-export DENO_INSTALL="$HOME/.deno"
-export PATH="$DENO_INSTALL/bin:$PATH"
+# # deno install
+# export DENO_INSTALL="$HOME/.deno"
+# export PATH="$DENO_INSTALL/bin:$PATH"
 
-# Added by Toolbox App
-export PATH="$HOME/.local/share/JetBrains/Toolbox/scripts:$PATH"
+# # Added by Toolbox App
+# export PATH="$HOME/.local/share/JetBrains/Toolbox/scripts:$PATH"
 
-# NVM init
-export NVM_DIR="$HOME/.config/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# # NVM init
+# export NVM_DIR="$HOME/.config/nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

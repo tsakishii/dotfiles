@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 # Aliases
 ## emacs
 alias emdae='emacs --daemon'
@@ -5,8 +7,8 @@ alias emkill='emacsclient -e "(kill-emacs)"'
 alias emstart='emacsclient -c -a emacs'
 
 ## grep
-#alias ag='grep --color-match="1;31"'
-#alias grep='ag --color-match="1;31"'
+alias ag='grep --color-match="1;31"'
+alias grep='ag --color-match="1;31"'
 
 ## zshell
 alias zsrc='source $ZDOTDIR/zshrc'
@@ -15,14 +17,14 @@ alias zsrc='source $ZDOTDIR/zshrc'
 alias ll='ls -l --color=auto'
 alias la='ls -la --color=auto'
 
-## Kubernetes & Minikube
-alias mk="minikube kubectl --"
-alias k="kubectl"
-source <(kubectl completion zsh)
+# ## Kubernetes & Minikube
+# alias mk="minikube kubectl --"
+# alias k="kubectl"
+# source <(kubectl completion zsh)
 
-## the-fuck
-eval $(thefuck --alias)
+# ## the-fuck
+# eval $(thefuck --alias)
 
-## youtube-dl
-alias yt='youtube-dl --add-metadata -i'
-alias yta='youtube-dl -x -f bestaudio/best'
+# ## youtube-dl
+# alias yt='youtube-dl --add-metadata -i'
+# alias yta='youtube-dl -x -f bestaudio/best'
