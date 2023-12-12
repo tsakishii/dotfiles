@@ -1,11 +1,5 @@
 #!/bin/zsh
 
-GUIX_PROFILE="/home/toro/.guix-profile"
-. "$GUIX_PROFILE/etc/profile"
-
-GUIX_PROFILE="/home/toro/.config/guix/current"
-. "$GUIX_PROFILE/etc/profile"
-
 # # rust setup & add to PATH
 # . "$HOME/.cargo/env"
 # export PATH="$HOME/.cargo/bin:$PATH"
