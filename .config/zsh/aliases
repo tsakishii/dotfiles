@@ -27,5 +27,5 @@ alias la='ls -la --color=auto'
 # eval $(thefuck --alias)
 
 # ## youtube-dl
-# alias yt='youtube-dl --add-metadata -i'
-# alias yta='youtube-dl -x -f bestaudio/best'
+# alias ytmeta='yt-dlp --add-metadata -i'
+# alias ytsound='yt-dlp -x -f bestaudio/best'
