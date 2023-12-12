@@ -12,7 +12,7 @@ alias emstart='emacsclient -c -a emacs'
 alias grep='grep --color=auto'
 
 ## zshell
-alias zsrc='source $ZDOTDIR/zshrc'
+alias zsrc='source $ZDOTDIR/.zshrc'
 
 ## ls
 alias ll='ls -l --color=auto'
