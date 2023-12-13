@@ -18,6 +18,9 @@ alias zsrc='source $ZDOTDIR/.zshrc'
 alias ll='ls -l --color=auto'
 alias la='ls -la --color=auto'
 
+## pip3
+alias pip='pip3'
+
 # ## Kubernetes & Minikube
 # alias mk="minikube kubectl --"
 # alias k="kubectl"
