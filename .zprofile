@@ -28,7 +28,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 export GRADLE_HOME=/opt/gradle/gradle-7.4.2
 export PATH=$GRADLE_HOME/bin:$PATH
-export JAVA_HOME=/usr/lib/jvm/java-1.17.0-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-1.21.0-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 
 # # deno install
