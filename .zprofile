@@ -12,7 +12,9 @@
 # programs
 export BROWSER="firefox"
 export TERMINAL="alacritty"
-export EDITOR='emacs'
+export VISUAL=emacsclient
+export EDITOR="$VISUAL"
+
 
 # add to path
 # set PATH so it includes private bin if it exists
