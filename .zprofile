@@ -26,7 +26,9 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
 
 export GRADLE_HOME=/opt/gradle/gradle-7.4.2
 export PATH=$GRADLE_HOME/bin:$PATH
