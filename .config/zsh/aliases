@@ -29,6 +29,6 @@ alias pip='pip3'
 # ## the-fuck
 # eval $(thefuck --alias)
 
-# ## youtube-dl
-# alias ytmeta='yt-dlp --add-metadata -i'
-# alias ytsound='yt-dlp -x -f bestaudio/best'
+## youtube-dl
+alias ytmeta='yt-dlp --add-metadata -i'
+alias ytsound='yt-dlp -x -f bestaudio/best'
