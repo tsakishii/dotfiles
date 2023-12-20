@@ -35,11 +35,12 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-export GRADLE_HOME=/opt/gradle/gradle-7.4.2
-export PATH=$GRADLE_HOME/bin:$PATH
 # Set leiningen home
 export LEIN_HOME="$XDG_DATA_HOME/lein"
 
+# Use if Gradle is installed
+# export GRADLE_HOME=/opt/gradle/gradle-7.4.2
+# export PATH=$GRADLE_HOME/bin:$PATH
 export JAVA_HOME=/usr/lib/jvm/java-1.21.0-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 
