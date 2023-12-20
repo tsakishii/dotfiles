@@ -15,8 +15,8 @@ alias grep='grep --color=auto'
 alias zsrc='source $ZDOTDIR/.zshrc'
 
 ## ls
-alias ll='ls -l --color=auto'
-alias la='ls -la --color=auto'
+alias ll='ls -lv --color=auto'
+alias la='ls -lAv --sort=extension --group-directories-first --color=auto'
 
 ## pip3
 alias pip='pip3'
