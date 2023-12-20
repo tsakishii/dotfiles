@@ -7,11 +7,6 @@ export ZDOTDIR="$HOME/.config/zsh"
 # export AWS_SHARED_CREDENTIALS_FILE="${XDG_CONFIG_HOME}/aws/credentials"
 # export AWS_CONFIG_FILE="${XDG_CONFIG_HOME}/aws/config"
 
-# default programs
-export BROWSER="firefox"
-export TERMINAL="alacritty"
-export EDITOR='emacsclient -a emacs'
-export VISUAL='emacsclient -c -a emacs'
 
 # Almighty GNU Emacs binding
 bindkey -e
