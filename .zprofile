@@ -35,6 +35,9 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+# Set the wgetrc file
+export WGETRC="$XDG_CONFIG_HOME/wgetrc"
+
 # Set leiningen home
 export LEIN_HOME="$XDG_DATA_HOME/lein"
 
