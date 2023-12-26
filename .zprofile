@@ -14,11 +14,11 @@ export XDG_DATA_HOME="$HOME/.local/share"
 # command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 # eval "$(pyenv init -)"
 
-# programs
+# default programs
 export BROWSER="firefox"
 export TERMINAL="alacritty"
-export VISUAL=emacsclient
-export EDITOR="$VISUAL"
+export EDITOR='emacs -nw'
+export VISUAL='emacsclient -c -a emacs'
 
 
 # add to path
