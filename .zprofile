@@ -44,9 +44,6 @@ export PATH=$JAVA_HOME/bin:$PATH
 # export DENO_INSTALL="$HOME/.deno"
 # export PATH="$DENO_INSTALL/bin:$PATH"
 
-# # Added by Toolbox App
-# export PATH="$HOME/.local/share/JetBrains/Toolbox/scripts:$PATH"
-
 # NVM init
 if [ -d "$XDG_CONFIG_HOME/nvm" ]; then
     NVM_DIR="$XDG_CONFIG_HOME"/nvm
