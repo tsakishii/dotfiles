@@ -31,10 +31,6 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
-
 # Set the wgetrc file
 export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 
