@@ -50,7 +50,9 @@ export PATH=$JAVA_HOME/bin:$PATH
 # # Added by Toolbox App
 # export PATH="$HOME/.local/share/JetBrains/Toolbox/scripts:$PATH"
 
-# # NVM init
-# export NVM_DIR="$HOME/.config/nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# NVM init
+if [ -d "$XDG_CONFIG_HOME/nvm" ]; then
+    NVM_DIR="$XDG_CONFIG_HOME"/nvm
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+fi
