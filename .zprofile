@@ -7,7 +7,7 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state/"
 
 # # python environments 'pyenv'
-# export PYENV_ROOT="$HOME/.pyenv"
+# export PYENV_ROOT="$XDG_DATA_HOME/pyenv"
 # command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 # eval "$(pyenv init -)"
 
