@@ -14,7 +14,7 @@ export XDG_STATE_HOME="$HOME/.local/state/"
 # default programs
 export BROWSER="firefox"
 export TERMINAL="alacritty"
-export EDITOR='emacs -nw'
+export EDITOR='emacs -q -nw'
 export VISUAL='emacsclient -c -a emacs'
 
 
