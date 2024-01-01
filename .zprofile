@@ -17,6 +17,7 @@ export TERMINAL="alacritty"
 export EDITOR='emacs -q -nw'
 export VISUAL='emacsclient -c -a emacs'
 
+# export CC=/usr/bin/gcc-10 CXX=/usr/bin/gcc-10
 
 # add to path
 # set PATH so it includes private bin if it exists
