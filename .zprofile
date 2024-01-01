@@ -38,6 +38,13 @@ export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 # Set leiningen home
 export LEIN_HOME="$XDG_DATA_HOME/lein"
 
+# Rustup home
+export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
+
+# # rust setup & add to PATH
+# . "$HOME/.cargo/env"
+# export PATH="$HOME/.cargo/bin:$PATH"
+
 # Use if Gradle is installed
 # export GRADLE_HOME=/opt/gradle/gradle-7.4.2
 # export PATH=$GRADLE_HOME/bin:$PATH
