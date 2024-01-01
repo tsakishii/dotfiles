@@ -58,6 +58,10 @@ if [ -d "$HOME/.deno" ]; then
     PATH="$DENO_INSTALL/bin:$PATH"
 fi
 
+# wine
+if [ -d "$XDG_DATA_HOME/wineprefixes" ]; then
+    WINEPREFIX="$XDG_DATA_HOME"/wineprefixes/default
+fi
 
 # NVM init
 if [ -d "$XDG_CONFIG_HOME/nvm" ]; then
