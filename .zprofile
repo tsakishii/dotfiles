@@ -44,9 +44,12 @@ export LEIN_HOME="$XDG_DATA_HOME/lein"
 export JAVA_HOME=/usr/lib/jvm/java-1.21.0-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 
-# # deno install
-# export DENO_INSTALL="$HOME/.deno"
-# export PATH="$DENO_INSTALL/bin:$PATH"
+# deno install
+if [ -d "$HOME/.deno" ]; then
+    DENO_INSTALL="$HOME/.deno"
+    PATH="$DENO_INSTALL/bin:$PATH"
+fi
+
 
 # NVM init
 if [ -d "$XDG_CONFIG_HOME/nvm" ]; then
