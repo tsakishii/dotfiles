@@ -21,6 +21,9 @@ alias la='ls -lAv --sort=extension --group-directories-first --color=auto'
 ## pip3
 alias pip='pip3'
 
+## python3
+alias python='python3'
+
 # ## Kubernetes & Minikube
 # alias mk="minikube kubectl --"
 # alias k="kubectl"
