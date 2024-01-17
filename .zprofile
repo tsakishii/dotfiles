@@ -37,7 +37,7 @@ export LEIN_HOME="$XDG_DATA_HOME/lein"
 
 # Python environments 'pyenv'
 export PYENV_ROOT="$XDG_DATA_HOME/pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 # Rustup home
