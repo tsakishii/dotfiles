@@ -6,10 +6,6 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state/"
 
-# # python environments 'pyenv'
-# export PYENV_ROOT="$XDG_DATA_HOME/pyenv"
-# command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init -)"
 
 # default programs
 export BROWSER="firefox"
@@ -38,6 +34,11 @@ export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 
 # Set leiningen home
 export LEIN_HOME="$XDG_DATA_HOME/lein"
+
+# Python environments 'pyenv'
+export PYENV_ROOT="$XDG_DATA_HOME/pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 # Rustup home
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
