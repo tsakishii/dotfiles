@@ -29,6 +29,9 @@ fi
 export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME/aws/credentials"
 export AWS_CONFIG_FILE="$XDG_CONFIG_HOME/aws/config"
 
+# minikube
+export MINIKUBE_HOME="$XDG_DATA_HOME/minikube"
+
 # Set the wgetrc file
 export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 
