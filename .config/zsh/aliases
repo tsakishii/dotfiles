@@ -25,9 +25,9 @@ alias pip='pip3'
 alias python='python3'
 
 # ## Kubernetes & Minikube
-# alias mk="minikube kubectl --"
-# alias k="kubectl"
-# source <(kubectl completion zsh)
+alias mk="minikube kubectl --"
+alias k="kubectl"
+source <(kubectl completion zsh)
 
 # ## the-fuck
 # eval $(thefuck --alias)
