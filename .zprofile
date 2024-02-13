@@ -42,6 +42,9 @@ export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 # Set leiningen home
 export LEIN_HOME="$XDG_DATA_HOME/lein"
 
+# npmrc
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
+
 # Python environments 'pyenv'
 export PYENV_ROOT="$XDG_DATA_HOME/pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
