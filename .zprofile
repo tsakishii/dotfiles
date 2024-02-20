@@ -71,7 +71,7 @@ fi
 
 # wine
 if [ -d "$XDG_DATA_HOME/wineprefixes" ]; then
-    WINEPREFIX="$XDG_DATA_HOME"/wineprefixes/default
+    WINEPREFIX="$XDG_DATA_HOME/wineprefixes/default"
 fi
 
 # NVM init
