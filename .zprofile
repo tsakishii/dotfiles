@@ -10,7 +10,7 @@ export XDG_STATE_HOME="${HOME}/.local/state/"
 # default programs
 export BROWSER="firefox"
 export TERMINAL="alacritty"
-export EDITOR='emacs -q -nw'
+export EDITOR='emacsclient -q -t -nw'
 export VISUAL='emacsclient -c -a emacs'
 
 # export CC=/usr/bin/gcc-10 CXX=/usr/bin/gcc-10
