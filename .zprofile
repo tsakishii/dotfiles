@@ -17,7 +17,7 @@ export VISUAL='emacsclient -c -a emacs'
 
 # add to path
 # set PATH so it includes private bin if it exists
-[ -d "$HOME/bin" ] && PATH="${HOME}/bin:$PATH" then
+[ -d "$HOME/bin" ] && PATH="${HOME}/bin:$PATH"
 
 [ -d "$HOME/.local/bin" ] && PATH="${HOME}/.local/bin:$PATH"
 
