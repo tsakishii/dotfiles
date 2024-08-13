@@ -17,13 +17,9 @@ export VISUAL='emacsclient -c -a emacs'
 
 # add to path
 # set PATH so it includes private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
+[ -d "$HOME/bin" ] && PATH="${HOME}/bin:$PATH" then
 
-if [ -d "$HOME/.local/bin" ] ; then
-    PATH="$HOME/.local/bin:$PATH"
-fi
+[ -d "$HOME/.local/bin" ] && PATH="${HOME}/.local/bin:$PATH"
 
 # AWS
 export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME/aws/credentials"
@@ -72,14 +68,13 @@ if [ -d "$HOME/.deno" ]; then
     PATH="$DENO_INSTALL/bin:$PATH"
 fi
 
+# deno install
+[ -d "$HOME/.deno" ] && DENO_INSTALL="${HOME}/.deno" && PATH="${DENO_INSTALL}/bin:$PATH"
+
 # wine
-if [ -d "$XDG_DATA_HOME/wineprefixes" ]; then
-    WINEPREFIX="$XDG_DATA_HOME/wineprefixes/default"
-fi
+[ -d "$XDG_DATA_HOME/wineprefixes" ] && WINEPREFIX="${XDG_DATA_HOME}/wineprefixes/default"
 
 # NVM init
-if [ -d "$XDG_CONFIG_HOME/nvm" ]; then
-    NVM_DIR="$XDG_CONFIG_HOME"/nvm
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-fi
+[ -d "$XDG_CONFIG_HOME/nvm" ] && NVM_DIR="${XDG_CONFIG_HOME}/nvm" && \
+[ -s "${NVM_DIR}/nvm.sh" ] && . "${NVM_DIR}/nvm.sh" && \
+[ -s "${NVM_DIR}/bash_completion" ] && . "${NVM_DIR}/bash_completion"
