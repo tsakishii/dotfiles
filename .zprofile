@@ -22,30 +22,30 @@ export VISUAL='emacsclient -c -a emacs'
 [ -d "$HOME/.local/bin" ] && PATH="${HOME}/.local/bin:$PATH"
 
 # AWS
-export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME/aws/credentials"
-export AWS_CONFIG_FILE="$XDG_CONFIG_HOME/aws/config"
+export AWS_SHARED_CREDENTIALS_FILE="${XDG_CONFIG_HOME}/aws/credentials"
+export AWS_CONFIG_FILE="${XDG_CONFIG_HOME}/aws/config"
 
 # Docker
-export DOCKER_CONFIG="$XDG_CONFIG_HOME/docker"
+export DOCKER_CONFIG="${XDG_CONFIG_HOME}/docker"
 
 # K8S
-export KUBECONFIG="$XDG_CONFIG_HOME/kube"
-export KUBECACHEDIR="$XDG_CACHE_HOME/kube"
+export KUBECONFIG="${XDG_CONFIG_HOME}/kube"
+export KUBECACHEDIR="${XDG_CACHE_HOME}/kube"
 
 # minikube
-export MINIKUBE_HOME="$XDG_DATA_HOME/minikube"
+export MINIKUBE_HOME="${XDG_DATA_HOME}/minikube"
 
 # Set the wgetrc file
-export WGETRC="$XDG_CONFIG_HOME/wgetrc"
+export WGETRC="${XDG_CONFIG_HOME}/wgetrc"
 
 # Set leiningen home
-export LEIN_HOME="$XDG_DATA_HOME/lein"
+export LEIN_HOME="${XDG_DATA_HOME}/lein"
 
 # npmrc
-export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
+export NPM_CONFIG_USERCONFIG="${XDG_CONFIG_HOME}/npm/npmrc"
 
 # Python environments 'pyenv'
-export PYENV_ROOT="$XDG_DATA_HOME/pyenv"
+export PYENV_ROOT="${XDG_DATA_HOME}/pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
@@ -60,7 +60,7 @@ export RUSTUP_HOME="${XDG_DATA_HOME}/rustup"
 # export GRADLE_HOME=/opt/gradle/gradle-7.4.2
 # export PATH=$GRADLE_HOME/bin:$PATH
 export JAVA_HOME="/usr/lib/jvm/java-1.21.0-openjdk-amd64"
-export PATH=$JAVA_HOME/bin:$PATH
+export PATH="${JAVA_HOME}/bin:$PATH"
 
 # deno install
 [ -d "$HOME/.deno" ] && DENO_INSTALL="${HOME}/.deno" && PATH="${DENO_INSTALL}/bin:$PATH"
