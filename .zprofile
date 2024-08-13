@@ -63,12 +63,6 @@ export JAVA_HOME="/usr/lib/jvm/java-1.21.0-openjdk-amd64"
 export PATH=$JAVA_HOME/bin:$PATH
 
 # deno install
-if [ -d "$HOME/.deno" ]; then
-    DENO_INSTALL="$HOME/.deno"
-    PATH="$DENO_INSTALL/bin:$PATH"
-fi
-
-# deno install
 [ -d "$HOME/.deno" ] && DENO_INSTALL="${HOME}/.deno" && PATH="${DENO_INSTALL}/bin:$PATH"
 
 # wine
