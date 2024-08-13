@@ -17,9 +17,9 @@ export VISUAL='emacsclient -c -a emacs'
 
 # add to path
 # set PATH so it includes private bin if it exists
-[ -d "$HOME/bin" ] && PATH="${HOME}/bin:$PATH"
+[[ -d "$HOME/bin" ]] && PATH="${HOME}/bin:$PATH"
 
-[ -d "$HOME/.local/bin" ] && PATH="${HOME}/.local/bin:$PATH"
+[[ -d "$HOME/.local/bin" ]] && PATH="${HOME}/.local/bin:$PATH"
 
 # AWS
 export AWS_SHARED_CREDENTIALS_FILE="${XDG_CONFIG_HOME}/aws/credentials"
@@ -63,12 +63,12 @@ export JAVA_HOME="/usr/lib/jvm/java-1.21.0-openjdk-amd64"
 export PATH="${JAVA_HOME}/bin:$PATH"
 
 # deno install
-[ -d "$HOME/.deno" ] && DENO_INSTALL="${HOME}/.deno" && PATH="${DENO_INSTALL}/bin:$PATH"
+[[ -d "$HOME/.deno" ]] && DENO_INSTALL="${HOME}/.deno" && PATH="${DENO_INSTALL}/bin:$PATH"
 
 # wine
-[ -d "$XDG_DATA_HOME/wineprefixes" ] && WINEPREFIX="${XDG_DATA_HOME}/wineprefixes/default"
+[[ -d "$XDG_DATA_HOME/wineprefixes" ]] && WINEPREFIX="${XDG_DATA_HOME}/wineprefixes/default"
 
 # NVM init
-[ -d "$XDG_CONFIG_HOME/nvm" ] && NVM_DIR="${XDG_CONFIG_HOME}/nvm" && \
-[ -s "${NVM_DIR}/nvm.sh" ] && . "${NVM_DIR}/nvm.sh" && \
-[ -s "${NVM_DIR}/bash_completion" ] && . "${NVM_DIR}/bash_completion"
+[[ -d "$XDG_CONFIG_HOME/nvm" ]] && NVM_DIR="${XDG_CONFIG_HOME}/nvm" && \
+[[ -s "${NVM_DIR}/nvm.sh" ]] && . "${NVM_DIR}/nvm.sh" && \
+[[ -s "${NVM_DIR}/bash_completion" ]] && . "${NVM_DIR}/bash_completion"
