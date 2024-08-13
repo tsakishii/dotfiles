@@ -54,7 +54,7 @@ export PYENV_ROOT="$XDG_DATA_HOME/pyenv"
 eval "$(pyenv init -)"
 
 # Rustup home
-export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
+export RUSTUP_HOME="${XDG_DATA_HOME}/rustup"
 
 # # rust setup & add to PATH
 # . "$HOME/.cargo/env"
