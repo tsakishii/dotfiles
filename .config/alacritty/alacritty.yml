@@ -39,6 +39,12 @@ cursor:
   # Block
   style: Block
 
+colors:
+  # Modus Vivendi Tinted Colors
+  primary:
+    foreground: "#FFFFFF"
+    background: "#0D0E1C"
+
 mouse:
   hide_when_typing: true
 
