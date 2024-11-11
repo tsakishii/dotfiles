@@ -10,6 +10,7 @@ window:
       instance: Alacritty
       general: Alacritty
   opacity : 0.8
+  blur: true
 
 scrolling:
   history: 10000
