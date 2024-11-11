@@ -62,6 +62,11 @@ export RUSTUP_HOME="${XDG_DATA_HOME}/rustup"
 export JAVA_HOME="/usr/lib/jvm/java-1.21.0-openjdk-amd64"
 export PATH="${JAVA_HOME}/bin:$PATH"
 
+export PATH="/usr/local/go/bin:$PATH"
+export GOPATH="${XDG_DATA_HOME}/go"
+[[ -d $GOPATH ]] && export PATH="$GOPATH/bin:$PATH"
+export GOMODCACHE="${XDG_CACHE_HOME}/go/mod"
+
 # deno install
 [[ -d "$HOME/.deno" ]] && DENO_INSTALL="${HOME}/.deno" && PATH="${DENO_INSTALL}/bin:$PATH"
 
