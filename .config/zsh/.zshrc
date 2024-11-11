@@ -14,15 +14,16 @@ autoload -Uz colors && colors
 
 # Completions
 autoload -Uz compinit
-zstyle ':completion:*' menu select
+[ -d "$XDG_CACHE_HOME"/zsh ] || mkdir -p "$XDG_CACHE_HOME"/zsh
+zstyle ':completion:*' cache-path "$XDG_CACHE_HOME"/zsh/zcompcache
 zmodload zsh/complist
-compinit -D ~/.cache/zsh/zcompdump-$ZSH_VERSION
+compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-$ZSH_VERSION
 _comp_options+=(globdots) # Shows hidden files
 
 # History settings
 HISTSIZE=1000000
 SAVEHIST=1000000
-HISTFILE=$HOME/.cache/zsh/history
+HISTFILE="$XDG_CACHE_HOME"/zsh/history
 
 # Source aliases
 source $ZDOTDIR/aliases
