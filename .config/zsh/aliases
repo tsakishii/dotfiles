@@ -14,6 +14,9 @@ alias grep='grep --color=auto'
 ## zshell
 alias zsrc='source $ZDOTDIR/.zshrc'
 
+## clear
+alias c="clear"
+
 ## ls
 alias ll='ls -lv --color=auto'
 alias la='ls -lAv --sort=extension --group-directories-first --color=auto'
