@@ -2,7 +2,6 @@ window:
   dimensions:
     columns: 124
     lines: 28
-
   padding:
     x: 5
     y: 5
