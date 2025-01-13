@@ -1,0 +1,38 @@
+[window]
+dimensions = { columns = 124, lines = 28 }
+padding = { x = 5, y = 5 }
+class = { instance = "Alacritty", general = "Alacritty" }
+opacity = 0.8
+blur = true
+
+[font]
+normal = { family = "Hack", style = "Regular" }
+bold = { family = "Hack", style = "Bold" }
+italic = { family = "Hack", style = "Bold Italic" }
+size = 11
+
+[selection]
+save_to_clipboard = true
+
+[colors]
+foreground = "#FFFFFF"
+background = "#0D0E1C"
+
+[cursor]
+style = Block
+
+[scrolling]
+history = 10000
+multiplier = 3
+auto_scroll = false
+
+[mouse]
+hide_when_typing = true
+
+[keyboard]
+bindings = [
+{ key = "PageUp", mods = "Control|Shift", action = "ScrollPageUp" },
+{ key = "PageDown", mods = "Control|Shift", action = "ScrollPageDown" },
+{ key = "End", mods = "Control|Shift", action = "ScrollToBottom" },
+{ key = "Home", mods = "Control|Shift", action = "ScrollToTop" }
+]
