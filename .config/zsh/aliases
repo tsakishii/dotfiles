@@ -30,6 +30,12 @@ alias python='python3'
 # ## Kubernetes & Minikube
 alias mk="minikube kubectl --"
 alias k="kubectl"
+alias ka="kubectl apply -f"
+alias kd="kubectl describe"
+alias kg="kubectl get"
+alias kr="kubectl run"
+alias ke="kubectl edit"
+alias kdel="kubectl delete"
 source <(kubectl completion zsh)
 
 # ## the-fuck
