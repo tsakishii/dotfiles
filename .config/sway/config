@@ -14,7 +14,7 @@ set $up k
 set $right l
 
 set $mod Mod4
-set $menu wofi --show run
+set $menu wofi --show drun
 
 
 ### Output configuration
