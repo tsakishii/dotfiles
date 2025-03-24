@@ -1,0 +1,8 @@
+width=600
+height=350
+term=alacritty
+
+# You configure the key combinations with a - sign,
+# unlike in other config files where + is the standard.
+key_up=Control_L-p
+key_down=Control_L-n
