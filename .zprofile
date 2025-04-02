@@ -5,6 +5,7 @@ export XDG_CONFIG_HOME="${HOME}/.config"
 export XDG_CACHE_HOME="${HOME}/.cache"
 export XDG_DATA_HOME="${HOME}/.local/share"
 export XDG_STATE_HOME="${HOME}/.local/state/"
+export XDG_DATA_DIRS="/usr/share/:/usr/local/share/:${HOME}/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share"
 
 # default programs
 export BROWSER="firefox"
@@ -58,8 +59,8 @@ export RUSTUP_HOME="${XDG_DATA_HOME}/rustup"
 # Use if Gradle is installed
 # export GRADLE_HOME=/opt/gradle/gradle-7.4.2
 # export PATH=$GRADLE_HOME/bin:$PATH
-export JAVA_HOME="/usr/lib/jvm/java-1.21.0-openjdk-amd64"
-export PATH="${JAVA_HOME}/bin:$PATH"
+# export JAVA_HOME="/usr/lib/jvm/java-1.21.0-openjdk-amd64"
+# export PATH="${JAVA_HOME}/bin:$PATH"
 
 export PATH="/usr/local/go/bin:$PATH"
 export GOPATH="${XDG_DATA_HOME}/go"
@@ -70,7 +71,7 @@ export GOMODCACHE="${XDG_CACHE_HOME}/go/mod"
 [[ -d "$HOME/.deno" ]] && DENO_INSTALL="${HOME}/.deno" && PATH="${DENO_INSTALL}/bin:$PATH"
 
 # wine
-[[ -d "$XDG_DATA_HOME/wineprefixes" ]] && WINEPREFIX="${XDG_DATA_HOME}/wineprefixes/default"
+#[[ -d "$XDG_DATA_HOME/wineprefixes" ]] && WINEPREFIX="${XDG_DATA_HOME}/wineprefixes/default"
 
 # NVM init
 [[ -d "$XDG_CONFIG_HOME/nvm" ]] && NVM_DIR="${XDG_CONFIG_HOME}/nvm" && \
