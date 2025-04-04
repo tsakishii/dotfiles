@@ -221,6 +221,7 @@ bar {
 #
 for_window [title="^.*"] title_format ""
 for_window [class="^.*"] border pixel 5
+for_window [app_id="pavucontrol"] floating enable
 titlebar_border_thickness 0
 titlebar_padding 0
 
