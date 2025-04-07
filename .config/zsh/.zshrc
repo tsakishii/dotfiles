@@ -25,6 +25,9 @@ HISTSIZE=1000000
 SAVEHIST=1000000
 HISTFILE="$XDG_CACHE_HOME"/zsh/history
 
+# Kubectl completion
+source <(kubectl completion zsh)
+
 # Source aliases
 source $ZDOTDIR/aliases
 
