@@ -1,8 +1,3 @@
-#!/bin/zsh
-
-# zsh
-export ZDOTDIR="$HOME/.config/zsh"
-
 # Almighty GNU Emacs binding
 bindkey -e
 
@@ -17,7 +12,7 @@ autoload -Uz compinit
 [ -d "$XDG_CACHE_HOME"/zsh ] || mkdir -p "$XDG_CACHE_HOME"/zsh
 zstyle ':completion:*' cache-path "$XDG_CACHE_HOME"/zsh/zcompcache
 zmodload zsh/complist
-compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-$ZSH_VERSION
+compinit -d "${XDG_CACHE_HOME}"/zsh/zcompdump-$ZSH_VERSION
 _comp_options+=(globdots) # Shows hidden files
 
 # History settings
@@ -26,13 +21,25 @@ SAVEHIST=1000000
 HISTFILE="$XDG_CACHE_HOME"/zsh/history
 
 # Kubectl completion
-source <(kubectl completion zsh)
+if command -v kubectl >/dev/null; then
+    source <(kubectl completion zsh)
+fi
+
+# Initialize Pyenv
+if command -v pyenv >/dev/null; then
+  eval "$(pyenv init -)"
+fi
+
+# Initialize pyenv-virtualenv if installed
+if command -v pyenv-virtualenv-init >/dev/null; then
+  eval "$(pyenv virtualenv-init -)"
+fi
 
 # Source aliases
 source $ZDOTDIR/aliases
 
 # Source functions
-source ~/.config/zsh/zsh-functions
+source $ZDOTDIR/zsh-functions
 
 # Config files
 zsh_add_file "zsh-prompt"
@@ -40,3 +47,9 @@ zsh_add_file "zsh-prompt"
 # Community plugins
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
 zsh_add_plugin "zsh-users/zsh-autosuggestions"
+
+# NVM init
+[[ -d "$XDG_CONFIG_HOME/nvm" ]] && NVM_DIR="${XDG_CONFIG_HOME}/nvm" && \
+[[ -s "${NVM_DIR}/nvm.sh" ]] && . "${NVM_DIR}/nvm.sh" && \
+[[ -s "${NVM_DIR}/bash_completion" ]] && . "${NVM_DIR}/bash_completion"
+
