@@ -1,10 +1,8 @@
-#!/bin/zsh
-
 # Aliases
 ## emacs
-alias emdae='emacs --daemon'
-alias emkill='emacsclient -e "(kill-emacs)"'
-alias emstart='emacsclient -c -a emacs'
+alias emd='emacs --daemon'
+alias emk='emacsclient -e "(kill-emacs)"'
+alias ems='emacsclient -c -a emacs'
 
 ## grep
 # alias ag='grep --color-match="1;31"'
@@ -36,7 +34,6 @@ alias kg="kubectl get"
 alias kr="kubectl run"
 alias ke="kubectl edit"
 alias kdel="kubectl delete"
-source <(kubectl completion zsh)
 
 # ## the-fuck
 # eval $(thefuck --alias)
