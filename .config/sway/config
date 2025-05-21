@@ -16,6 +16,8 @@ set $right l
 set $mod Mod4
 set $menu wofi --show drun
 
+exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
 
 ### Output configuration
 #
@@ -263,5 +265,3 @@ bindsym --to-code XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@
 #
 bindsym --to-code XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym --to-code XF86MonBrightnessUp exec brightnessctl set 5%+
-
-exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
