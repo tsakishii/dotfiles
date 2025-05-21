@@ -1,18 +1,26 @@
 {
-	"layer": "top",
-	"modules-left": ["sway/workspaces", "sway/mode"],
+  "layer": "top",
+  "modules-left": ["sway/workspaces", "sway/mode"],
   "modules-center": ["sway/window"],
-	"modules-right": ["wireplumber", "tray", "cpu", "memory", "network", "clock"],
-	"sway/window": {
-		"format": {},
+  "modules-right": ["wireplumber", "tray", "cpu", "memory", "network", "clock"],
+  "sway/window": {
+    "format": {},
     "max-length": 50,
     "rewrite": {
-    "(.*)LibreWolf": "󰈹 LibreWolf",
-    "(.*)GNU Emacs at pop-os": " Emacs",
-    "(.*)Alacritty": " Alacritty",
-    "^(.{15}).+$": "$1…",
+      "(.*)LibreWolf": "󰈹 LibreWolf",
+      "(.*)GNU Emacs at pop-os": " Emacs",
+      "(.*)Alacritty": " Alacritty",
+      "^(.{15}).+$": "$1…",
     }
-	},
+  },
+  "wireplumber": {
+    "format": "{volume}%",
+    "on-click": "pavucontrol",
+  },
+  "tray": {
+    "icon-size": 16,
+    "spacing": 10
+  },
   "cpu": {
     "format": "󰻠 {usage}%",
     "tooltip": false
@@ -21,10 +29,10 @@
     "format": "󰝪 {}%",
     "tooltip": false
   },
-	"battery": {
-		"format": "{capacity}% {icon}",
-		"format-icons": ["", "", "", "", ""]
-	},
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": ["", "", "", "", ""]
+  },
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
     "format-wifi": "{essid} ({signalStrength}%) ",
@@ -34,12 +42,8 @@
     // "format-disconnected": "Disconnected ⚠",
     "format-alt": "󰲐 {ifname}: {ipaddr}/{cidr}"
   },
-	"clock": {
-		"format": "󰥔 {:%d. %b  %H:%M}",
+  "clock": {
+    "format": "󰥔 {:%d. %b  %H:%M}",
     "format-alt": "󰥔 {:%a, %d. %b  %H:%M}"
-	},
-  "tray": {
-    "icon-size": 16,
-    "spacing": 10
   },
 }
