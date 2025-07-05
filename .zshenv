@@ -64,6 +64,7 @@ export PYENV_ROOT="${XDG_DATA_HOME}/pyenv"
 
 # npmrc
 export NPM_CONFIG_USERCONFIG="${XDG_CONFIG_HOME}/npm/npmrc"
+export PATH="${XDG_DATA_HOME}/npm/bin:$PATH"
 
 # wine
 #[[ -d "$XDG_DATA_HOME/wineprefixes" ]] && WINEPREFIX="${XDG_DATA_HOME}/wineprefixes/default"
