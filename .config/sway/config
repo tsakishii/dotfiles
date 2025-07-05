@@ -16,7 +16,17 @@ set $right l
 set $mod Mod4
 set $menu wofi --show drun
 
-exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+#
+exec gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
+
+# Ensure correct env vars
+exec --no-startup-id env \
+  XDG_CURRENT_DESKTOP=sway \
+  XDG_SESSION_TYPE=wayland \
+  GDK_BACKEND=wayland \
+  MOZ_ENABLE_WAYLAND=1 \
+  QT_QPA_PLATFORM=wayland \
+  dbus-update-activation-environment --systemd --all
 
 
 ### Output configuration
@@ -24,7 +34,8 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY XDG_CU
 #
 # Example configuration:
 output "*" bg ~/wp/spidergwen-axspv-2560x1080.jpg fill
-output HDMI-A-1 resolution 2560x1080 position 2560,0
+output HDMI-A-1 mode 2560x1080 pos 2560 0
+output * max_render_time off
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
 
@@ -36,7 +47,7 @@ set $lock 'swaylock -f -i ~/wp/spidergwen-axspv-2560x1080.jpg -s fill --font "Ha
 exec swayidle -w \
   timeout 900 $lock \
   timeout 1200 'swaymsg "output * dpms off"' \
-	resume 'swaymsg "output * dpms on"' \
+  resume 'swaymsg "output * dpms on"' \
   before-sleep $lock
 
 # exec swayidle -w \
@@ -224,11 +235,21 @@ bar {
 for_window [title="^.*"] title_format ""
 for_window [class="^.*"] border pixel 5
 for_window [app_id="pavucontrol"] floating enable
+
+# Zoom fucking
+for_window [class="^zoom$"] floating enable, move position center
+for_window [class="^Zoom$"] floating enable, move position center
+
+# Zoom launch windows, popups, login, etc.
+for_window [title="^.*Zoom.*$"] floating enable
+for_window [class="^zoom_app.*$"] floating enable
+for_window [app_id="zoom"] floating enable
+
+
 titlebar_border_thickness 0
 titlebar_padding 0
 
 include @sysconfdir@/sway/config.d/*
-
 
 # Color Scheme:
 #
