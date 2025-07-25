@@ -14,7 +14,7 @@ export XDG_DATA_DIRS="/usr/share/:/usr/local/share/:${HOME}/.local/share/flatpak
 export ZDOTDIR="${HOME}/.config/zsh"
 
 if [[ -o login ]]; then
-    [[ -f "${ZDOTDIR}/zprofile" ]] && source "${ZDOTDIR}/zprofile"
+    [[ -f "${ZDOTDIR}/.zprofile" ]] && source "${ZDOTDIR}/.zprofile"
 fi
 
 # default programs
