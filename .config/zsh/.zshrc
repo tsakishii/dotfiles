@@ -48,6 +48,11 @@ zsh_add_file "zsh-prompt"
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
 zsh_add_plugin "zsh-users/zsh-autosuggestions"
 
+# Keychain
+if command -v keychain > /dev/null && [[ -t 0 ]]; then
+  eval "$(keychain --quiet --eval github_id_ed25519)"
+fi
+
 # NVM init
 [[ -d "$XDG_CONFIG_HOME/nvm" ]] && NVM_DIR="${XDG_CONFIG_HOME}/nvm" && \
 [[ -s "${NVM_DIR}/nvm.sh" ]] && . "${NVM_DIR}/nvm.sh" && \
