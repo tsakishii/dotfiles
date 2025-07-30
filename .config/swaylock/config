@@ -1,0 +1,15 @@
+ignore-empty-password
+
+image=~/wp/spidergwen-axspv-2560x1080.jpg
+
+fade-in=1
+
+indicator
+
+indicator-radius=200
+
+show-keyboard-layout
+
+show-failed-attempts
+
+effect-pixelate=5
