@@ -5,4 +5,4 @@
 
 ### config ###
 .config/zsh/.zcompdump
-plugins/*
+.config/zsh/plugins/*
