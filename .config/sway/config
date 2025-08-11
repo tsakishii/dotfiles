@@ -288,3 +288,7 @@ bindsym --to-code XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@
 #
 bindsym --to-code XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym --to-code XF86MonBrightnessUp exec brightnessctl set 5%+
+
+# Gammastep:
+#
+exec /usr/bin/gammastep -v -c ~/.config/gammastep/config.ini
