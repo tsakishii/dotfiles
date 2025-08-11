@@ -14,12 +14,14 @@ set $up k
 set $right l
 
 set $mod Mod4
-set $menu wofi --show drun
+set $menu rofi -show drun
 
+
+# Gnome settings:
 #
 exec gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 
-# Ensure correct env vars
+# Ensure correct env vars:
 exec --no-startup-id env \
   XDG_CURRENT_DESKTOP=sway \
   XDG_SESSION_TYPE=wayland \
@@ -27,7 +29,6 @@ exec --no-startup-id env \
   MOZ_ENABLE_WAYLAND=1 \
   QT_QPA_PLATFORM=wayland \
   dbus-update-activation-environment --systemd --all
-
 
 ### Output configuration
 #
