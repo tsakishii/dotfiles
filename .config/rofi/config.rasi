@@ -1,0 +1,18 @@
+/************************************************
+ * ROFI config
+ * User: tsakishii
+ * Description: This is a minimal config
+ * that uses the original Modus Vivendi
+ * theme color scheme for GNU Emacs made by
+ * Protesilaos Stavrou.
+ ***********************************************/
+
+configuration {
+  modi: "drun,run,window";
+  show-icons: true;
+
+  terminal: "alacritty";
+  sidebar-mode: false;
+}
+
+@theme "modus-vivendi-ish-dark.rasi"
