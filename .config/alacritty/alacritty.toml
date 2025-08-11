@@ -5,34 +5,82 @@ class = { instance = "Alacritty", general = "Alacritty" }
 opacity = 0.8
 blur = true
 
+[font.normal]
+family = "Hack"
+style = "Regular"
+
+[font.bold]
+family = "Hack"
+style = "Bold"
+
+[font.italic]
+family = "Hack"
+style = "Bold Italic"
+
 [font]
-normal = { family = "Hack", style = "Regular" }
-bold = { family = "Hack", style = "Bold" }
-italic = { family = "Hack", style = "Bold Italic" }
 size = 11
 
 [selection]
 save_to_clipboard = true
 
-[colors]
+[colors.primary]
 foreground = "#FFFFFF"
 background = "#0D0E1C"
 
-[cursor]
-style = Block
+[colors.cursor]
+text = "#0D0E1C"
+cursor = "#82B0EC"
+
+[colors.selection]
+text = "#0D0E1C"
+background = "#FEACD0"
+
+[colors.normal]
+black   = "#000000"
+red     = "#FF7A90"
+green   = "#6AE4B9"
+yellow  = "#E6D17B"
+blue    = "#82B0EC"
+magenta = "#FEACD0"
+cyan    = "#6AE4B9"
+white   = "#FFFFFF"
+
+[colors.bright]
+black   = "#4C4C4C"
+red     = "#FF9AA6"
+green   = "#8EF0CF"
+yellow  = "#F2DF8F"
+blue    = "#A5D0FF"
+magenta = "#FFD0E6"
+cyan    = "#A8F3DB"
+white   = "#FFFFFF"
+
+[cursor.style]
+shape = "Block"
 
 [scrolling]
 history = 10000
 multiplier = 3
-auto_scroll = false
 
 [mouse]
 hide_when_typing = true
 
-[keyboard]
-bindings = [
-{ key = "PageUp", mods = "Control|Shift", action = "ScrollPageUp" },
-{ key = "PageDown", mods = "Control|Shift", action = "ScrollPageDown" },
-{ key = "End", mods = "Control|Shift", action = "ScrollToBottom" },
-{ key = "Home", mods = "Control|Shift", action = "ScrollToTop" }
-]
+[[keyboard.bindings]]
+key = "PageUp"
+mods = "Control|Shift"
+action = "ScrollPageUp"
+
+[[keyboard.bindings]]
+key = "PageDown"
+mods = "Control|Shift"
+action = "ScrollPageDown"
+
+[[keyboard.bindings]]
+key = "End"
+mods = "Control|Shift"
+action = "ScrollToBottom"
+
+[[keyboard.bindings]]
+key = "Home"
+mods = "Control|Shift"
+action = "ScrollToTop"
