@@ -7,14 +7,16 @@
     "format": {},
     "max-length": 50,
     "rewrite": {
-      "(.*)LibreWolf": "󰈹 LibreWolf",
-      "(.*)GNU Emacs at pop-os": " Emacs",
-      "(.*)Alacritty": " Alacritty",
+      "(.*)LibreWolf": " LibreWolf",
+      "(.*)GNU Emacs at einstein": " Emacs",
+      "(.*)Alacritty": " Alacritty",
       "^(.{15}).+$": "$1…",
+      "(.*)Brave": " Brave",
+      "(.*)Zen Browser": " Zen",
     }
   },
   "wireplumber": {
-    "format": "{volume}%",
+    "format": " {volume}%",
     "on-click": "pavucontrol",
   },
   "tray": {
@@ -34,13 +36,14 @@
     "format-icons": ["", "", "", "", ""]
   },
   "network": {
+    "family": "ipv4_6",
     // "interface": "wlp2*", // (Optional) To force the use of this interface
     "format-wifi": "{essid} ({signalStrength}%) ",
-    "format-ethernet": "󰲐 {ifname}: {netmask}",
+    "format-ethernet": " {ifname}, Speed={bandwidthTotalBytes}",
     // "tooltip-format": "{ifname} via {gwaddr} ",
     // "format-linked": "{ifname} (No IP) ",
     // "format-disconnected": "Disconnected ⚠",
-    "format-alt": "󰲐 {ifname}: {ipaddr}/{cidr}"
+    "format-alt": " {ifname}: {ipaddr}, Speed={bandwidthTotalBytes}"
   },
   "clock": {
     "format": "󰥔 {:%d. %b  %H:%M}",
