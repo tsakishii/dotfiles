@@ -253,19 +253,21 @@ include @sysconfdir@/sway/config.d/*
 
 # Color Scheme:
 #
-set $client_high       #f78fe7
-set $client_indicator  #d9d8d8
-set $client_background #0d0e1c
-set $client_foreground #ffffff
-set $client_urgent     #ff6b55
+set $bg      #000000
+set $fg      #ffffff
+set $blue    #82b0ec
+set $magenta #feacd0
+set $cyan    #6ae4b9
+set $red     #ff7a90
+set $border  #646464
+set $dimrow  #1a1a1a
 
-# Class:                border             background         text               indicator          child_border
-#
-client.focused          $client_high       $client_high       $client_foreground $client_high       $client_high
-client.focused_inactive $client_background $client_background $client_foreground $client_background $client_background
-client.unfocused        $client_background $client_background $client_foreground $client_background $client_background
-client.urgent           $client_urgent     $client_urgent     $client_foreground $client_urgent     $client_urgent
-# client.placeholder    #ffffff #ffffff #ffffff #000000 #ffffff # used for legacy i3 compat
+# Class:                border   background text     indicator child_border
+client.focused          $blue    $blue      $bg      $blue     $blue
+client.focused_inactive $border  $dimrow    $fg      $border   $border
+client.unfocused        $border  $bg        $fg      $border   $border
+client.urgent           $red     $red       $bg      $red      $red
+# client.placeholder      $dimrow  $dimrow    $fg      $dimrow   $dimrow
 
 # Borders:
 #
