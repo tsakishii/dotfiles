@@ -18,7 +18,7 @@ if [[ -o login ]]; then
 fi
 
 # default programs
-export BROWSER="librewolf"
+export BROWSER="zen"
 export TERMINAL="alacritty"
 export VISUAL="emacsclient -c -a emacs"
 export EDITOR="$VISUAL"
