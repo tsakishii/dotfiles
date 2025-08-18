@@ -27,19 +27,21 @@ fi
 
 # Initialize Pyenv
 if command -v pyenv >/dev/null; then
-  eval "$(pyenv init -)"
+    eval "$(pyenv init -)"
 fi
 
 # Initialize pyenv-virtualenv if installed
 if command -v pyenv-virtualenv-init >/dev/null; then
-  eval "$(pyenv virtualenv-init -)"
+    eval "$(pyenv virtualenv-init -)"
 fi
 
 # Source aliases
 source $ZDOTDIR/aliases
 
 # Source functions
-source $ZDOTDIR/zsh-functions
+[ -f $ZDOTDIR/zsh-functions ] && source $ZDOTDIR/zsh-functions
+
+[ -f $ZDOTDIR/ssh-functions ] && source $ZDOTDIR/ssh-functions
 
 # Config files
 zsh_add_file "zsh-prompt"

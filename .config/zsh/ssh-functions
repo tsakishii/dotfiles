@@ -1,0 +1,14 @@
+#!/bin/sh
+
+kill-ssh-session() {
+    ssh-add -D           >/dev/null 2>&1 || true
+    keychain --stop mine >/dev/null 2>&1 || true
+    ssh-agent -k         >/dev/null 2>&1 || true
+    unset SSH_AUTH_SOCK SSH_AGENT_PID
+    echo "[ssh-off] ssh-agent stopped, no identities loaded"
+}
+
+restart-ssh-session() {
+    eval "$(keychain --quiet --eval github_id_ed25519)"
+    echo "[ssh-on] ssh-agent running with keychain"
+}
