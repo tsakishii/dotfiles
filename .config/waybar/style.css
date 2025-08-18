@@ -96,6 +96,7 @@ window#waybar.empty #window {
 #wireplumber,
 #custom-media,
 #tray,
+#language,
 #mode,
 #idle_inhibitor,
 #scratchpad,
@@ -263,11 +264,8 @@ label:focus {
 }
 
 #language {
-  background: @magenta;
+  background: @yellow;
   color: @bg;
-  padding: 0 5px;
-  margin: 0 5px;
-  min-width: 16px;
 }
 
 #keyboard-state {
