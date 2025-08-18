@@ -2,7 +2,7 @@
   "layer": "top",
   "modules-left": ["sway/workspaces", "sway/mode"],
   "modules-center": ["sway/window"],
-  "modules-right": ["wireplumber", "tray", "cpu", "memory", "network", "clock"],
+  "modules-right": ["wireplumber", "tray", "sway/language", "cpu", "memory", "network", "clock"],
   "sway/window": {
     "format": {},
     "max-length": 50,
@@ -22,6 +22,9 @@
   "tray": {
     "icon-size": 16,
     "spacing": 10
+  },
+  "sway/language": {
+    "format": "{short} {variant}",
   },
   "cpu": {
     "format": "󰻠 {usage}%",
