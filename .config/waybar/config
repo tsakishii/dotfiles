@@ -24,7 +24,8 @@
     "spacing": 10
   },
   "sway/language": {
-    "format": "{short} {variant}",
+    "format": "{short}",
+    "on-click": "swaymsg input type:keyboard xkb_switch_layout next",
   },
   "cpu": {
     "format": "󰻠 {usage}%",
