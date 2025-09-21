@@ -3,6 +3,10 @@
   "modules-left": ["sway/workspaces", "sway/mode"],
   "modules-center": ["sway/window"],
   "modules-right": ["wireplumber", "tray", "sway/language", "cpu", "memory", "network", "clock"],
+  "margin-top": 5,
+  "margin-left": 10,
+  "margin-right": 10,
+  "margin-bottom": 10,
   "sway/window": {
     "format": {},
     "max-length": 50,
