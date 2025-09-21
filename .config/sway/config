@@ -264,7 +264,7 @@ set $border  #646464
 set $dimrow  #1a1a1a
 
 # Class:                border   background text     indicator child_border
-client.focused          $blue    $blue      $bg      $blue     $blue
+client.focused          $fg      $fg        $bg      $fg       $fg
 client.focused_inactive $border  $dimrow    $fg      $border   $border
 client.unfocused        $border  $bg        $fg      $border   $border
 client.urgent           $red     $red       $bg      $red      $red
@@ -275,7 +275,7 @@ client.urgent           $red     $red       $bg      $red      $red
 default_floating_border pixel 5
 default_border pixel 5
 gaps outer 5
-gaps inner 10
+gaps inner 5
 smart_borders off
 hide_edge_borders --i3 none
 
