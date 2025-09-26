@@ -3,16 +3,17 @@
  ************************************************/
 
 /* Core palette (matches rofi/sway/alacritty) */
-@define-color bg      #0d0e1c; /* background main */
-@define-color fg      #ffffff; /* text main */
-@define-color blue    #82b0ec; /* accent blue */
-@define-color magenta #feacd0; /* accent magenta */
-@define-color cyan    #6ae4b9; /* accent cyan/teal */
-@define-color green   #44bc44; /* accent green */
-@define-color red     #ff7a90; /* urgent red */
-@define-color yellow  #e6d17b; /* accent yellow */
-@define-color border  #646464; /* neutral border/sep */
-@define-color dimrow  #1a1a1a; /* dim alt background */
+@define-color bg      #0d0e1c;               /* background main */
+@define-color bgt     rgba(13, 14, 28, 0.7); /* background transparent */
+@define-color fg      #ffffff;               /* text main */
+@define-color blue    #82b0ec;               /* accent blue */
+@define-color magenta #feacd0;               /* accent magenta */
+@define-color cyan    #6ae4b9;               /* accent cyan/teal */
+@define-color green   #44bc44;               /* accent green */
+@define-color red     #ff7a90;               /* urgent red */
+@define-color yellow  #e6d17b;               /* accent yellow */
+@define-color border  #646464;               /* neutral border/sep */
+@define-color dimrow  #1a1a1a;               /* dim alt background */
 
 * {
   font-family: "Hack";
@@ -21,9 +22,8 @@
 }
 
 window#waybar {
-  background: @bg;
+  background: @bgt;
   border: 2px solid @fg;
-  opacity: 0.9;
 }
 
 #window {
@@ -59,9 +59,7 @@ window#waybar.empty #window {
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
-  background: rgba(0, 0, 0, 0.2);
-  box-shadow: inherit;
-  text-shadow: inherit;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 #workspaces button.focused {
