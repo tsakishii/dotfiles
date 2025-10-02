@@ -36,6 +36,11 @@ export GOMODCACHE="${XDG_CACHE_HOME}/go/mod"
 export AWS_SHARED_CREDENTIALS_FILE="${XDG_CONFIG_HOME}/aws/credentials"
 export AWS_CONFIG_FILE="${XDG_CONFIG_HOME}/aws/config"
 
+# ansible
+export ANSIBLE_HOME="${XDG_CONFIG_HOME}/ansible"
+export ANSIBLE_CONFIG="${ANSIBLE_HOME}/ansible.cfg"
+export ANSIBLE_GALAXY_CACHE_DIR="${ANSIBLE_HOME}/galaxy_cache"
+
 # docker
 export DOCKER_CONFIG="${XDG_CONFIG_HOME}/docker"
 
