@@ -246,6 +246,9 @@ for_window [title="^.*Zoom.*$"] floating enable
 for_window [class="^zoom_app.*$"] floating enable
 for_window [app_id="zoom"] floating enable
 
+# Dont sleep if fullscreen
+for_window [app_id="^.*"] inhibit_idle fullscreen
+
 
 titlebar_border_thickness 0
 titlebar_padding 0
